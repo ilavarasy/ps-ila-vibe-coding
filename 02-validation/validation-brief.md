@@ -39,4 +39,5 @@ If a guided headline + action still bounces, the metric itself may be wrong, piv
 - **User voice (verbatim quotes):**
   - "I open it, see twelve charts, and have no idea which one I'm supposed to act on. So I close it.", Marketing manager
   - "It tells me *what* happened but never *what to do about it*. I still export to a spreadsheet to think.", Product lead
+  - "My exec just wants one slide. The dashboard gives me forty widgets instead.", PMM
 - **Hypothesis (above):** ✓

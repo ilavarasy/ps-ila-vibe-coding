@@ -302,11 +302,10 @@ The purpose of this single refinement is to make the recommended action easier t
 
 ## Reusable techniques learned
 
-- _____
-- _____
+- I learnt using the Readme as context and ensuring that the context is not lost. Also learnt using LLM to identify gaps and using LLM to refine the prompts and give better guard rails and focused prompts
 
 ## What broke (and the fix)
 
 _Where a single mega-prompt failed and chaining fixed it._
 
-_____
+I continued writing the chain prompts rather than the large prompt to save credits.

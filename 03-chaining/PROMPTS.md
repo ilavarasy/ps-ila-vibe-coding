@@ -277,75 +277,27 @@ The dashboard must never invent an insight, recommendation or causal explanation
 
 ### Step 3: Refine, one surgical polish
 ```
-The Northbeam Guided Overview needs a professional B2B SaaS analytics polish.
+The Northbeam Guided Overview needs one surgical UI refinement.
 
-Before making any changes, audit the Guided Overview specifically for information hierarchy, typography and spacing.
+First, audit the screen and identify the 3 biggest visual gaps in typography and spacing.
 
-1. Identify the 3 biggest visual gaps that make it harder for a Product Manager to understand within 5 seconds:
-   • What changed?
-   • Why it matters?
-   • What should I do next?
+Then make ONLY ONE change:
 
-2. After the audit, make ONE surgical refinement only:
-Refine the “Highest Signal” insight card and its recommended action.
+Refine the primary “Investigate mobile onboarding” button so it is visually clear that this is the single recommended next action.
 
-The card must create this visual hierarchy:
+Make the button slightly more prominent through its size, spacing and visual emphasis, while keeping it consistent with the existing Northbeam design system.
 
-FIRST — WHAT CHANGED
-Make the headline the strongest element:
+Do not change the headline.
+Do not change the insight text.
+Do not change the evidence cards.
+Do not change any other buttons.
+Do not change navigation.
+Do not change colours elsewhere.
+Do not change any content, functionality, states, routes or underlying logic.
 
-“Trial conversion dropped 18% this week”
+Only refine the “Investigate mobile onboarding” CTA.
 
-Emphasise “18%” visually without making the card feel alarming or consumer-like.
-
-SECOND — WHY IT MATTERS
-Place the plain-language explanation directly below the headline:
-
-“Traffic is up 13%, but trial users are converting at a lower rate. The decline is concentrated among mobile users arriving from Paid Social.”
-
-Keep this visually secondary to the headline but easy to scan.
-
-THIRD — WHAT TO DO
-Make the primary CTA clearly visible:
-
-“Investigate mobile onboarding”
-
-Add a short evidence-based reason close to the CTA:
-
-“Mobile activation ↓19 pts · Paid Social conversion ↓41%”
-
-The CTA should feel like the natural next step after reading the insight, not like a generic dashboard button.
-
-Visually separate supporting evidence from the recommendation so users can distinguish:
-
-SIGNAL → EXPLANATION → EVIDENCE → ACTION
-
-Use typography, whitespace, alignment and subtle visual grouping to create hierarchy rather than adding more cards, colours or decoration.
-
-Keep the existing Northbeam design system:
-• Light B2B SaaS analytics aesthetic
-• Existing sidebar and navigation
-• Existing colour tokens
-• Rounded cards
-• Subtle borders and shadows
-• Existing typography family
-
-Do not redesign the navigation.
-Do not change the underlying data.
-Do not change any routes.
-Do not change the experiment logic.
-Do not change loading, empty, insufficient-evidence or error-state behaviour.
-Do not add new functionality.
-Do not redesign other dashboard cards.
-
-The goal of this refinement is not to make the dashboard prettier.
-
-The goal is to make the highest-signal insight understandable within 5 seconds and make the recommended action visually obvious.
-
-After making the change, briefly state:
-1. The 3 visual gaps you identified.
-2. The single UI element you changed.
-3. Why that change improves the hypothesis test.
+The purpose of this single refinement is to make the recommended action easier to identify and click, because recommended-action click rate is a key measure of the prototype hypothesis.
 ```
 
 ## Reusable techniques learned

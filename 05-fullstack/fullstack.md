@@ -36,7 +36,7 @@ Every new table gets explicit table-level permissions in the same change, otherw
 | Case | Before | After |
 |---|---|---|
 | Empty / first-run state | Partial data (metrics load, funnel doesn't) | show what loaded, disable the action that depends on what didn't. |
-| Bad / malicious input | Sign-in happens after a decision was recorded anonymously | the decision carries over, once. |
+| Bad / malicious input | visitors who aren't signed in can read or change them or add records under someone else's session | recorded decisions, exports and activity are now tied to a signed-in person only — visitors who aren't signed in can no longer read or change them or add records under someone else's session — and the special database function that could be called by anyone was removed. |
 | Failure / offline | Any required read fails | the failure screen, never a stale insight presented as current. |
 
 ## Stress test results

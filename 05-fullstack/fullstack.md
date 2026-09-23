@@ -6,14 +6,14 @@
 
 _The working, shareable link that survives real users._
 
-_____
+https://action-first-dash.lovable.app
 
 ## Data schema
 
 | Entity | Key fields | Notes |
 |---|---|---|
-| Profiles | _____ | one row per signed-in person: display name, role (PM, Growth, Exec, PMM), created date. |
-| decision_events | _____ | an audit trail of what a person did on a decision: flagged, reopened, closed, with a note. |
+| Profiles | id | one row per signed-in person: display name, role (PM, Growth, Exec, PMM), created date. |
+| decision_events | id | an audit trail of what a person did on a decision: flagged, reopened, closed, with a note. |
 
 ## Access rules
 
@@ -43,4 +43,4 @@ Every new table gets explicit table-level permissions in the same change, otherw
 
 _What you threw at it, and what held / broke._
 
-_____
+Spam Click. I got the error message saying "For security purposes, you can only request this after 59 seconds."

@@ -12,21 +12,32 @@ _____
 
 | Entity | Key fields | Notes |
 |---|---|---|
-| _____ | _____ | _____ |
+| Profiles | _____ | one row per signed-in person: display name, role (PM, Growth, Exec, PMM), created date. |
+| decision_events | _____ | an audit trail of what a person did on a decision: flagged, reopened, closed, with a note. |
 
 ## Access rules
 
 _Who can see / do what? Where are the auth boundaries?_
 
-_____
+Reference content — growth metrics, readings, periods, funnel steps, insights, evidence, findings, quotes, experiment measures — stays readable by everyone, writable by nobody from the app.
+
+profiles — a person can read and edit only their own.
+
+flagged_investigations — a signed-in person reads and writes only rows they own; anonymous prototype sessions keep working, scoped to their own session id, with no ability to read anyone else's.
+
+decision_events and saved_exports — readable and insertable only by the person they belong to; never deletable from the app.
+
+prototype_events — insert only; reads limited to the owner. No open read access to the whole event log.
+
+Every new table gets explicit table-level permissions in the same change, otherwise the app cannot reach it
 
 ## Edge cases hardened
 
 | Case | Before | After |
 |---|---|---|
-| Empty / first-run state | _____ | _____ |
-| Bad / malicious input | _____ | _____ |
-| Failure / offline | _____ | _____ |
+| Empty / first-run state | Partial data (metrics load, funnel doesn't) | show what loaded, disable the action that depends on what didn't. |
+| Bad / malicious input | Sign-in happens after a decision was recorded anonymously | the decision carries over, once. |
+| Failure / offline | Any required read fails | the failure screen, never a stale insight presented as current. |
 
 ## Stress test results
 
